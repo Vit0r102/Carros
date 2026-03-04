@@ -69,24 +69,28 @@ h2 {
 }
 
 .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 12px;
-  background: #ff2e2e;
-  border: none;
-  border-radius: 10px;
+  height: 45px;
+  background: #ff0000;
   color: white;
-  font-size: 16px;
+  text-decoration: none;
+  border-radius: 10px;
   font-weight: bold;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: 0.3s;
+  transition: all 0.15s ease;
+  box-shadow: 0 5px 0 #b30000;
 }
 
 .btn:hover {
   background: #ff0000;
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
 }
 
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #b30000;
+}
 .login-link {
   text-align: center;
   margin-top: 15px;
